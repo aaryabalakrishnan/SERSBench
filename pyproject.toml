@@ -1,0 +1,30 @@
+[project]
+name = "sersbench"
+version = "0.1.0"
+description = "Benchmarking toolkit created by the SERS Laboratory."
+authors = [
+    { name = "Everett Eng", email = "eeng3@wisc.edu" },
+    { name = "Christian Rasmussen", email="crasmus000@citymail.cuny.edu" },
+    { name = "Aarya Balakrishnan", email= "aarya.balakrishnan@gmail.com"},
+    { name = "Isbel M. Guerrero", email= "isbelmg17@gmail.com"},
+    { name = "Yasmell Carrasco", email= "yasmellcarrasco12@gmail.com"},
+]
+readme = "README.md"
+license = { text = "MIT" } # Or use license file instead
+requires-python = ">=3.7"
+dependencies = [
+    "bqskit==1.2.0",
+    "qiskit==1.3.2",
+    "numpy==2.1.3",
+    "pandas==2.2.3",
+    "qiskit-ibm-runtime==0.36.1",
+    "matplotlib==3.9.2"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sersbench*"]    
